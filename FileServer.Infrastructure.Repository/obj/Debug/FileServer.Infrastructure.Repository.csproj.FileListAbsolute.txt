@@ -1,0 +1,9 @@
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\FileServer.Infrastructure.Repository.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\FileServer.Infrastructure.Repository.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\obj\Debug\FileServer.Infrastructure.Repository.csprojAssemblyReference.cache
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\obj\Debug\FileServer.Infrastructure.Repository.csproj.CoreCompileInputs.cache
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\obj\Debug\FileServer.Infrastructure.Repository.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\obj\Debug\FileServer.Infrastructure.Repository.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\FileServer.Common.Model.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\FileServer.Common.Model.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\obj\Debug\FileServer.Infrastructure.Repository.csproj.CopyComplete

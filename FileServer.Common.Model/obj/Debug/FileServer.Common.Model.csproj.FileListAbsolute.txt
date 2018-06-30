@@ -1,0 +1,6 @@
+C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\bin\Debug\FileServer.Common.Model.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\bin\Debug\FileServer.Common.Model.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\obj\Debug\FileServer.Common.Model.csprojAssemblyReference.cache
+C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\obj\Debug\FileServer.Common.Model.csproj.CoreCompileInputs.cache
+C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\obj\Debug\FileServer.Common.Model.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\obj\Debug\FileServer.Common.Model.pdb

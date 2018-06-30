@@ -1,0 +1,9 @@
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Presentation.WinSite.exe.config
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Presentation.WinSite.exe
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Presentation.WinSite.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.csprojAssemblyReference.cache
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.Properties.Resources.resources
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.csproj.GenerateResource.cache
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.csproj.CoreCompileInputs.cache
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.exe
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.pdb
