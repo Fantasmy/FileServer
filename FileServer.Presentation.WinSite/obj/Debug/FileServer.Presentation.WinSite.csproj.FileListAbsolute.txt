@@ -7,3 +7,9 @@ C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.csproj.CoreCompileInputs.cache
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.exe
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Common.Model.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Infrastructure.Repository.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Common.Model.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Infrastructure.Repository.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.Form1.resources
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.csproj.CopyComplete
