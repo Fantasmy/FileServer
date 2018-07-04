@@ -13,3 +13,7 @@ C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Infrastructure.Repository.pdb
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.Form1.resources
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.csproj.CopyComplete
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Utils.FileManager.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Utils.FileManager.pdb

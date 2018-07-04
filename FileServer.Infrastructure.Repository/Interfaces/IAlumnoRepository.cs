@@ -9,6 +9,9 @@ namespace FileServer.Infrastructure.Repository
 {
     public interface IAlumnoRepository
     {
+        List<Alumno> GetAll();
         Alumno Add(Alumno alumno);
+
+        void ChangeOrigin(string origin);
     }
 }

@@ -7,3 +7,7 @@ C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\obj\D
 C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\FileServer.Common.Model.dll
 C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\FileServer.Common.Model.pdb
 C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\obj\Debug\FileServer.Infrastructure.Repository.csproj.CopyComplete
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\FileServer.Utils.FileManager.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\FileServer.Utils.FileManager.pdb

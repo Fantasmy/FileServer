@@ -8,7 +8,7 @@ namespace FileServer.Common.Model
 {
     public class Alumno
     {
-        public int IdAlumno { get; set; }
+        public string IdAlumno { get; set; }
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
         public string Dni { get; set; }
@@ -18,7 +18,7 @@ namespace FileServer.Common.Model
 
         }
 
-        public Alumno(int IdAlumno, string Nombre, string Apellidos, string Dni)
+        public Alumno(string IdAlumno, string Nombre, string Apellidos, string Dni)
         {
             this.IdAlumno = IdAlumno;
             this.Nombre = Nombre;
