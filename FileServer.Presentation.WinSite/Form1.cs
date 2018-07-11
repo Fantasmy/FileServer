@@ -55,5 +55,10 @@ namespace FileServer.Presentation.WinSite
         {
             alumnoRepository.ChangeOrigin(origin.Text);
         }
+
+        private void nameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

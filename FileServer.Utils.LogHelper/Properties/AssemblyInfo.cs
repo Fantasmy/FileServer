@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("FileServer.Infrastructure.Repository")]
+[assembly: AssemblyTitle("FileServer.Utils.LogHelper")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FileServer.Infrastructure.Repository")]
+[assembly: AssemblyProduct("FileServer.Utils.LogHelper")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("388c348d-d2f0-4772-b3da-3c9655f59488")]
+[assembly: Guid("e999866e-de87-45dc-9726-4f12137bc19c")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

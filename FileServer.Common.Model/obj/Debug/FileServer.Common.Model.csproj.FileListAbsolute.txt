@@ -4,3 +4,8 @@ C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\obj\Debug\FileServ
 C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\obj\Debug\FileServer.Common.Model.csproj.CoreCompileInputs.cache
 C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\obj\Debug\FileServer.Common.Model.dll
 C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\obj\Debug\FileServer.Common.Model.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\bin\Debug\log4net.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\bin\Debug\log4net.xml
+C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\JYEP\source\repos\FileServer\FileServer.Common.Model\obj\Debug\FileServer.Common.Model.csproj.CopyComplete

@@ -8,15 +8,20 @@ namespace FileServer.Common.Model
 {
     public class Alumno
     {
+
+        // propiedades
         public string IdAlumno { get; set; }
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
         public string Dni { get; set; }
 
+
+        // constructores
         public Alumno()
         {
 
         }
+
 
         public Alumno(string IdAlumno, string Nombre, string Apellidos, string Dni)
         {
@@ -25,6 +30,8 @@ namespace FileServer.Common.Model
             this.Apellidos = Apellidos;
             this.Dni = Dni;
         }
+
+        // métodos
 
         public override bool Equals(object obj)
         {

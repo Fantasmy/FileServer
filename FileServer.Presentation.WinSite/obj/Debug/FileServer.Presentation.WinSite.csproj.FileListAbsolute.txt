@@ -17,3 +17,8 @@ C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\Newtonsoft.Json.xml
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Utils.FileManager.dll
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Utils.FileManager.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\log4net.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\log4net.xml
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Utils.LogHelper.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Utils.LogHelper.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\log4net.config
