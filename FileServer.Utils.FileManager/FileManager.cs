@@ -24,14 +24,34 @@ namespace FileServer.Utils.FileManager
             try
             {
                 File.WriteAllText(filePath, Json);
-                log.Debug("Info written in json");
+                log.Debug("Trying to write json");
             }
 
-            catch (Exception ex)
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("write error: " + ex.StackTrace);
+            //    log.Error("Couldn't write alumno info");
+            //    throw;
+            //}
+            catch (UnauthorizedAccessException ex)
             {
-                Console.WriteLine("write error: " + ex.StackTrace);
-                log.Error("Couldn't write alumno info");
-                throw;
+                throw ex;
+            }
+            catch (ArgumentException ex)
+            {
+                throw ex;
+            }
+            catch (DirectoryNotFoundException ex)
+            {
+                throw ex;
+            }
+            catch (IOException ex)
+            {
+                throw ex;
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                throw ex;
             }
         }
 

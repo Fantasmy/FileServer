@@ -11,12 +11,17 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FileServer.Infrastructure.Repository.Repositories;
+using log4net.Config;
+using log4net;
+using FileServer.Utils.LogHelper;
 
 namespace FileServer.Presentation.WinSite
 {
     public partial class Form1 : Form
     {
         AlumnoRepository alumnoRepository = new AlumnoRepository();
+
+        private static readonly log4net.ILog log = LogHelper.GetLogger();
 
         public Form1()
         {
@@ -25,6 +30,20 @@ namespace FileServer.Presentation.WinSite
 
         private void addButton_Click(object sender, EventArgs e)
         {
+
+            try
+            {
+                int p = 0;
+                var num = 5 / p;
+            }
+            catch (Exception ex)
+            {
+                LogManager.GetLogger("EmailLogger").Error(ex);
+
+            }
+
+            log.Debug("Clicked add button");
+
             // recoge datos alumno
             var alumno = new Alumno()
             {
@@ -48,7 +67,7 @@ namespace FileServer.Presentation.WinSite
                 MessageBox.Show("Error!!!");
             }
 
-            
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -56,9 +75,5 @@ namespace FileServer.Presentation.WinSite
             alumnoRepository.ChangeOrigin(origin.Text);
         }
 
-        private void nameBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

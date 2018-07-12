@@ -12,8 +12,7 @@ using FileServer.Utils.FileManager;
 using System.Configuration;
 using log4net;
 using FileServer.Utils.LogHelper;
-
-
+using log4net.Config;
 
 namespace FileServer.Infrastructure.Repository.Repositories
 {
@@ -59,7 +58,7 @@ namespace FileServer.Infrastructure.Repository.Repositories
                 fileManager.createJsonToFile(Json);
 
                 Console.WriteLine(alumno.Nombre);
-                log.Error("Inserted new alumno");
+                log.Debug("Returned alumno");
                 return alumno;
             }
 

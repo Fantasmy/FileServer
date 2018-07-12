@@ -5,16 +5,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FileServer.Utils.LogHelper;
 using log4net;
-
+using log4net.Config;
 
 namespace FileServer.Presentation.WinSite
 {
     static class Program
     {
         private static readonly ILog log = LogHelper.GetLogger();
+
         [STAThread]
         static void Main()
         {
+            XmlConfigurator.Configure();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
