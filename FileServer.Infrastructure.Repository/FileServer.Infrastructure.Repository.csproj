@@ -67,6 +67,10 @@
       <Project>{e999866e-de87-45dc-9726-4f12137bc19c}</Project>
       <Name>FileServer.Utils.LogHelper</Name>
     </ProjectReference>
+    <ProjectReference Include="..\VuelingException.cs\FileServer.Utils.CustomException.csproj">
+      <Project>{83bc6301-ecb5-49ca-9051-576e49a47a99}</Project>
+      <Name>FileServer.Utils.CustomException</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

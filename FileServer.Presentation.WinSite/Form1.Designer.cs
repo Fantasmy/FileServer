@@ -88,6 +88,7 @@
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(247, 26);
             this.nameBox.TabIndex = 5;
+            this.nameBox.TextChanged += new System.EventHandler(this.nameBox_TextChanged);
             // 
             // surnameBox
             // 

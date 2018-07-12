@@ -14,6 +14,9 @@ using FileServer.Infrastructure.Repository.Repositories;
 using log4net.Config;
 using log4net;
 using FileServer.Utils.LogHelper;
+using FileServer.Utils.CustomException;
+using System.Resources;
+using System.Reflection;
 
 namespace FileServer.Presentation.WinSite
 {
@@ -22,6 +25,8 @@ namespace FileServer.Presentation.WinSite
         AlumnoRepository alumnoRepository = new AlumnoRepository();
 
         private static readonly log4net.ILog log = LogHelper.GetLogger();
+
+        ResourceManager rm = new ResourceManager("FileServer.Presentation.WinSite.Resource", Assembly.GetExecutingAssembly());
 
         public Form1()
         {
@@ -36,9 +41,10 @@ namespace FileServer.Presentation.WinSite
                 int p = 0;
                 var num = 5 / p;
             }
-            catch (Exception ex)
+            catch (VuelingException ex)
             {
                 LogManager.GetLogger("EmailLogger").Error(ex);
+                throw new VuelingException(string.Format(rm.GetString("error")));
 
             }
 
@@ -75,5 +81,9 @@ namespace FileServer.Presentation.WinSite
             alumnoRepository.ChangeOrigin(origin.Text);
         }
 
+        private void nameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

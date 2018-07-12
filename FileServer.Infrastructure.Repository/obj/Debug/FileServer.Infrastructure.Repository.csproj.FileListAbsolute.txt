@@ -15,3 +15,5 @@ C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\D
 C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\log4net.xml
 C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\FileServer.Utils.LogHelper.dll
 C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\FileServer.Utils.LogHelper.pdb
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\VuelingException.cs.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Infrastructure.Repository\bin\Debug\VuelingException.cs.pdb

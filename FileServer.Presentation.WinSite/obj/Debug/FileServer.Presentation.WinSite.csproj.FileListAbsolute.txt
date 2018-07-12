@@ -22,3 +22,6 @@ C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Utils.LogHelper.dll
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\FileServer.Utils.LogHelper.pdb
 C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\log4net.config
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\obj\Debug\FileServer.Presentation.WinSite.Resource.resources
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\VuelingException.cs.dll
+C:\Users\JYEP\source\repos\FileServer\FileServer.Presentation.WinSite\bin\Debug\VuelingException.cs.pdb

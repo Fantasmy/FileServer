@@ -13,12 +13,17 @@ using System.Configuration;
 using log4net;
 using FileServer.Utils.LogHelper;
 using log4net.Config;
+using FileServer.Utils.CustomException;
+using System.Resources;
+using System.Reflection;
 
 namespace FileServer.Infrastructure.Repository.Repositories
 {
+    
 
     public class AlumnoRepository : IAlumnoRepository
     {
+        ResourceManager rm = new ResourceManager("FileServer.Presentation.WinSite.Resource", Assembly.GetExecutingAssembly());
         private FileManager fileManager = new FileManager();
         private static readonly ILog log = LogHelper.GetLogger();
         public List<Alumno> GetAll()
@@ -36,9 +41,11 @@ namespace FileServer.Infrastructure.Repository.Repositories
                     return JsonConvert.DeserializeObject<List<Alumno>>(alumnosStr);
                 }
 
-                catch (Exception)
+                catch (VuelingException ex)
                 {
                     return new List<Alumno>();
+                    //throw new VuelingException(string.Format(rm.GetString("error")));
+                    
                 }
             }
         }

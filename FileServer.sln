@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{4034C2D3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileServer.Utils.LogHelper", "FileServer.Utils.LogHelper\FileServer.Utils.LogHelper.csproj", "{E999866E-DE87-45DC-9726-4F12137BC19C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileServer.Utils.CustomException", "VuelingException.cs\FileServer.Utils.CustomException.csproj", "{83BC6301-ECB5-49CA-9051-576E49A47A99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{E999866E-DE87-45DC-9726-4F12137BC19C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E999866E-DE87-45DC-9726-4F12137BC19C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E999866E-DE87-45DC-9726-4F12137BC19C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83BC6301-ECB5-49CA-9051-576E49A47A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83BC6301-ECB5-49CA-9051-576E49A47A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83BC6301-ECB5-49CA-9051-576E49A47A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83BC6301-ECB5-49CA-9051-576E49A47A99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{E3D24AA8-6193-4EBC-95BE-EA8BED9CFBC2} = {4034C2D3-2A51-41AB-9386-C4BF67620DF8}
 		{4034C2D3-2A51-41AB-9386-C4BF67620DF8} = {6245A0A3-74E4-4ED9-9CFB-B6ADF1EFDF6E}
 		{E999866E-DE87-45DC-9726-4F12137BC19C} = {4034C2D3-2A51-41AB-9386-C4BF67620DF8}
+		{83BC6301-ECB5-49CA-9051-576E49A47A99} = {4034C2D3-2A51-41AB-9386-C4BF67620DF8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C34999F1-CB1A-4225-B0E8-34F9354FF42A}

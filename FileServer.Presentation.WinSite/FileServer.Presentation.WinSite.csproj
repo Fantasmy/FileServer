@@ -60,6 +60,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <DependentUpon>Resource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +80,10 @@
     <Content Include="log4net.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -105,6 +114,10 @@
     <ProjectReference Include="..\FileServer.Utils.LogHelper\FileServer.Utils.LogHelper.csproj">
       <Project>{E999866E-DE87-45DC-9726-4F12137BC19C}</Project>
       <Name>FileServer.Utils.LogHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VuelingException.cs\FileServer.Utils.CustomException.csproj">
+      <Project>{83bc6301-ecb5-49ca-9051-576e49a47a99}</Project>
+      <Name>FileServer.Utils.CustomException</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
