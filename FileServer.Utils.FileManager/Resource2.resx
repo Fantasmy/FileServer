@@ -117,22 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="addBtn" xml:space="preserve">
-    <value>Clicked add button</value>
-  </data>
-  <data name="eLogger" xml:space="preserve">
-    <value>EmailLogger</value>
-  </data>
   <data name="err" xml:space="preserve">
-    <value>Error</value>
+    <value>This is an error</value>
   </data>
-  <data name="err3" xml:space="preserve">
-    <value>Error!!!</value>
+  <data name="loadAlumL" xml:space="preserve">
+    <value>Loaded alumnos list</value>
   </data>
-  <data name="saveAlum" xml:space="preserve">
-    <value>Alumno guardado correctamente</value>
+  <data name="loadEr" xml:space="preserve">
+    <value>load error:</value>
   </data>
-  <data name="start" xml:space="preserve">
-    <value>Started app</value>
+  <data name="writJson" xml:space="preserve">
+    <value>Writing Json</value>
   </data>
 </root>

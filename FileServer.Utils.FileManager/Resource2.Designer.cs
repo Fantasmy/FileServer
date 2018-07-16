@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FileServer.Presentation.WinSite {
+namespace FileServer.Utils.FileManager {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace FileServer.Presentation.WinSite {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resource {
+    internal class Resource2 {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resource() {
+        internal Resource2() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace FileServer.Presentation.WinSite {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FileServer.Presentation.WinSite.Resource", typeof(Resource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FileServer.Utils.FileManager.Resource2", typeof(Resource2).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,25 +61,7 @@ namespace FileServer.Presentation.WinSite {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Clicked add button.
-        /// </summary>
-        internal static string addBtn {
-            get {
-                return ResourceManager.GetString("addBtn", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a EmailLogger.
-        /// </summary>
-        internal static string eLogger {
-            get {
-                return ResourceManager.GetString("eLogger", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Error.
+        ///   Busca una cadena traducida similar a This is an error.
         /// </summary>
         internal static string err {
             get {
@@ -88,29 +70,29 @@ namespace FileServer.Presentation.WinSite {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Error!!!.
+        ///   Busca una cadena traducida similar a Loaded alumnos list.
         /// </summary>
-        internal static string err3 {
+        internal static string loadAlumL {
             get {
-                return ResourceManager.GetString("err3", resourceCulture);
+                return ResourceManager.GetString("loadAlumL", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Alumno guardado correctamente.
+        ///   Busca una cadena traducida similar a load error:.
         /// </summary>
-        internal static string saveAlum {
+        internal static string loadEr {
             get {
-                return ResourceManager.GetString("saveAlum", resourceCulture);
+                return ResourceManager.GetString("loadEr", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Started app.
+        ///   Busca una cadena traducida similar a Writing Json.
         /// </summary>
-        internal static string start {
+        internal static string writJson {
             get {
-                return ResourceManager.GetString("start", resourceCulture);
+                return ResourceManager.GetString("writJson", resourceCulture);
             }
         }
     }

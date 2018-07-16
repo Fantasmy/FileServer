@@ -14,6 +14,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{BC2402DC-6429-45B1-A451-657C8F97D7AA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6245A0A3-74E4-4ED9-9CFB-B6ADF1EFDF6E}"
+	ProjectSection(SolutionItems) = preProject
+		FileServer.Presentation.WinSite\Resource.Designer.cs = FileServer.Presentation.WinSite\Resource.Designer.cs
+		FileServer.Presentation.WinSite\Resource.resx = FileServer.Presentation.WinSite\Resource.resx
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileServer.Utils.FileManager", "FileServer.Utils.FileManager\FileServer.Utils.FileManager.csproj", "{E3D24AA8-6193-4EBC-95BE-EA8BED9CFBC2}"
 EndProject

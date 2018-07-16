@@ -117,22 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="addBtn" xml:space="preserve">
-    <value>Clicked add button</value>
+  <data name="AppConf" xml:space="preserve">
+    <value>App.config</value>
   </data>
-  <data name="eLogger" xml:space="preserve">
-    <value>EmailLogger</value>
+  <data name="DesObj" xml:space="preserve">
+    <value>Trying to deserialize object</value>
   </data>
   <data name="err" xml:space="preserve">
-    <value>Error</value>
+    <value>error</value>
   </data>
-  <data name="err3" xml:space="preserve">
-    <value>Error!!!</value>
+  <data name="erWrite" xml:space="preserve">
+    <value>Error, cannot write line</value>
   </data>
-  <data name="saveAlum" xml:space="preserve">
-    <value>Alumno guardado correctamente</value>
+  <data name="fileN" xml:space="preserve">
+    <value>fileName</value>
   </data>
-  <data name="start" xml:space="preserve">
-    <value>Started app</value>
+  <data name="FilePresentWinReso" xml:space="preserve">
+    <value>FileServer.Presentation.WinSite.Resource</value>
+  </data>
+  <data name="loadEr" xml:space="preserve">
+    <value>load error: </value>
+  </data>
+  <data name="newAlum" xml:space="preserve">
+    <value>Added new alumno to the alumnos list</value>
+  </data>
+  <data name="newGui" xml:space="preserve">
+    <value>Created a new guid</value>
+  </data>
+  <data name="path1" xml:space="preserve">
+    <value>App.Config path chosen</value>
+  </data>
+  <data name="path2" xml:space="preserve">
+    <value>Environment path chosen</value>
+  </data>
+  <data name="reAlum" xml:space="preserve">
+    <value>Returned alumno</value>
+  </data>
+  <data name="varEnt" xml:space="preserve">
+    <value>Variable de entorno</value>
   </data>
 </root>

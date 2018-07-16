@@ -23,7 +23,7 @@ namespace FileServer.Infrastructure.Repository.Repositories
 
     public class AlumnoRepository : IAlumnoRepository
     {
-        ResourceManager rm = new ResourceManager("FileServer.Presentation.WinSite.Resource", Assembly.GetExecutingAssembly());
+        //ResourceManager rm = new ResourceManager(Resource1.FilePresentWinReso, Assembly.GetExecutingAssembly());
         private FileManager fileManager = new FileManager();
         private static readonly ILog log = LogHelper.GetLogger();
         public List<Alumno> GetAll()
@@ -37,15 +37,15 @@ namespace FileServer.Infrastructure.Repository.Repositories
             {
                 try
                 {
-                    log.Debug("Trying to deserialize object");
+                    log.Debug(Resource1.DesObj);
                     return JsonConvert.DeserializeObject<List<Alumno>>(alumnosStr);
                 }
 
                 catch (VuelingException ex)
                 {
                     return new List<Alumno>();
-                    //throw new VuelingException(string.Format(rm.GetString("error")));
-                    
+                    throw new VuelingException(Resource1.err);
+
                 }
             }
         }
@@ -55,24 +55,24 @@ namespace FileServer.Infrastructure.Repository.Repositories
             try
             {
                 alumno.IdAlumno = Guid.NewGuid().ToString();
-                log.Debug("Created a new guid");
+                log.Debug(Resource1.newGui);
 
                 var alumnos = GetAll();
                 alumnos.Add(alumno);
-                log.Debug("Added new alumno to the alumnos list");
+                log.Debug(Resource1.newAlum);
 
                 string Json = JsonConvert.SerializeObject(alumnos, Formatting.Indented);
                 fileManager.createJsonToFile(Json);
 
                 Console.WriteLine(alumno.Nombre);
-                log.Debug("Returned alumno");
+                log.Debug(Resource1.reAlum);
                 return alumno;
             }
 
             catch (Exception ex)
             {
-                Console.WriteLine("load error: " + ex.StackTrace);
-                log.Error("Error cannot werite line");
+                Console.WriteLine(Resource1.loadEr + ex.StackTrace);
+                log.Error(Resource1.erWrite);
                 return null;
             }
         }
@@ -80,15 +80,15 @@ namespace FileServer.Infrastructure.Repository.Repositories
         public void ChangeOrigin(string origin)
         {
             string filePath = "";
-            if ("App.config".Equals(origin))
+            if (Resource1.AppConf.Equals(origin))
             {
-                filePath = ConfigurationManager.AppSettings["fileName"];
-                log.Debug("App.Config path chosen");
+                filePath = ConfigurationManager.AppSettings[Resource1.fileN];
+                log.Debug(Resource1.path1);
             }
-            else if ("Variable de entorno".Equals(origin))
+            else if (Resource1.varEnt.Equals(origin))
             {
-                filePath = Environment.GetEnvironmentVariable("fileName");
-                log.Debug("Environment path chosen");
+                filePath = Environment.GetEnvironmentVariable(Resource1.fileN);
+                log.Debug(Resource1.path2);
 
             }
             this.fileManager.setFilePath(filePath);

@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using FileServer.Utils.LogHelper;
 using log4net;
 using log4net.Config;
+using System.Resources;
 
 namespace FileServer.Presentation.WinSite
 {
@@ -21,7 +22,7 @@ namespace FileServer.Presentation.WinSite
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            log.Debug("Started app");
+            log.Debug(Resource.start);
 
         }
     }

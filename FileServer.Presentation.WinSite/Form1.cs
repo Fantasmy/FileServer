@@ -26,7 +26,7 @@ namespace FileServer.Presentation.WinSite
 
         private static readonly log4net.ILog log = LogHelper.GetLogger();
 
-        ResourceManager rm = new ResourceManager("FileServer.Presentation.WinSite.Resource", Assembly.GetExecutingAssembly());
+        //ResourceManager rm = new ResourceManager("FileServer.Presentation.WinSite.Resource", Assembly.GetExecutingAssembly());
 
         public Form1()
         {
@@ -36,19 +36,19 @@ namespace FileServer.Presentation.WinSite
         private void addButton_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                int p = 0;
-                var num = 5 / p;
-            }
-            catch (VuelingException ex)
-            {
-                LogManager.GetLogger("EmailLogger").Error(ex);
-                throw new VuelingException(string.Format(rm.GetString("error")));
+            //try
+            //{
+            //    int p = 0;
+            //    var num = 5 / p;
+            //}
+            //catch (VuelingException ex)
+            //{
+            //    LogManager.GetLogger(Resource.eLogger).Error(ex);
+            //    throw new VuelingException(Resource.err);
 
-            }
+            //}
 
-            log.Debug("Clicked add button");
+            log.Debug(Resource.addBtn);
 
             // recoge datos alumno
             var alumno = new Alumno()
@@ -66,11 +66,11 @@ namespace FileServer.Presentation.WinSite
                 nameBox.Text = "";
                 surnameBox.Text = "";
                 dniBox.Text = "";
-                MessageBox.Show("Alumno guardado correctamente");
+                MessageBox.Show(Resource.saveAlum);
             }
             else
             {
-                MessageBox.Show("Error!!!");
+                MessageBox.Show(Resource.err3);
             }
 
 
@@ -79,11 +79,6 @@ namespace FileServer.Presentation.WinSite
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             alumnoRepository.ChangeOrigin(origin.Text);
-        }
-
-        private void nameBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

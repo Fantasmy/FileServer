@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Resources;
 
 namespace FileServer.Utils.FileManager
 {
@@ -24,7 +25,7 @@ namespace FileServer.Utils.FileManager
             try
             {
                 File.WriteAllText(filePath, Json);
-                log.Debug("Trying to write json");
+                log.Debug(Resource2.writJson);
             }
 
             //catch (Exception ex)
@@ -61,7 +62,7 @@ namespace FileServer.Utils.FileManager
             {
                 try
                 {
-                    log.Debug("Loaded alumnos list");
+                    log.Debug(Resource2.loadAlumL);
                     return File.ReadAllText(filePath); // loads alumnos list
 
                    
@@ -69,8 +70,8 @@ namespace FileServer.Utils.FileManager
 
                 catch (Exception ex)
                 {
-                    Console.WriteLine("load error: " + ex.StackTrace);
-                    log.Error("This is an error");
+                    Console.WriteLine(Resource2.loadEr + ex.StackTrace);
+                    log.Error(Resource2.err);
                 }
             }
             return null;
