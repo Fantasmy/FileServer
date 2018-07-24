@@ -37,6 +37,7 @@
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,18 +47,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractFileFactory.cs" />
     <Compile Include="FileManager.cs" />
+    <Compile Include="FileManagerFactory.cs" />
+    <Compile Include="FilePathManager.cs" />
+    <Compile Include="JsonFileManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource2.resx</DependentUpon>
     </Compile>
+    <Compile Include="TxtFileManager.cs" />
+    <Compile Include="XmlFileManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FileServer.Common.Model\FileServer.Common.Model.csproj">
+      <Project>{C4BBA4AB-135D-41A0-AB5B-7C5F3F8D1EC9}</Project>
+      <Name>FileServer.Common.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FileServer.Utils.LogHelper\FileServer.Utils.LogHelper.csproj">
       <Project>{E999866E-DE87-45DC-9726-4F12137BC19C}</Project>
       <Name>FileServer.Utils.LogHelper</Name>

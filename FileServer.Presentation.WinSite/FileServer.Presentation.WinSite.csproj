@@ -111,6 +111,10 @@
       <Project>{388c348d-d2f0-4772-b3da-3c9655f59488}</Project>
       <Name>FileServer.Infrastructure.Repository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FileServer.Utils.FileManager\FileServer.Utils.FileManager.csproj">
+      <Project>{E3D24AA8-6193-4EBC-95BE-EA8BED9CFBC2}</Project>
+      <Name>FileServer.Utils.FileManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FileServer.Utils.LogHelper\FileServer.Utils.LogHelper.csproj">
       <Project>{E999866E-DE87-45DC-9726-4F12137BC19C}</Project>
       <Name>FileServer.Utils.LogHelper</Name>

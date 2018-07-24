@@ -12,6 +12,6 @@ namespace FileServer.Infrastructure.Repository
         List<Alumno> GetAll();
         Alumno Add(Alumno alumno);
 
-        void ChangeOrigin(string origin);
+        //void ChangeOrigin(string origin);
     }
 }

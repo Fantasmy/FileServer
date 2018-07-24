@@ -136,7 +136,6 @@
             this.origin.Name = "origin";
             this.origin.Size = new System.Drawing.Size(228, 28);
             this.origin.TabIndex = 13;
-            this.origin.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label5
             // 

@@ -17,6 +17,7 @@ using FileServer.Utils.LogHelper;
 using FileServer.Utils.CustomException;
 using System.Resources;
 using System.Reflection;
+using FileServer.Utils.FileManager;
 
 namespace FileServer.Presentation.WinSite
 {
@@ -31,10 +32,14 @@ namespace FileServer.Presentation.WinSite
         public Form1()
         {
             InitializeComponent();
+            origin.SelectedIndex = 0;
+            comboBox1.SelectedIndex = 1;
         }
 
         private void addButton_Click(object sender, EventArgs e)
         {
+            AbstractFileFactory fFactory = new FileManagerFactory();
+            var alumnoRepository = new AlumnoRepository(fFactory, comboBox1.SelectedIndex, origin.SelectedIndex);
 
             //try
             //{
@@ -50,8 +55,10 @@ namespace FileServer.Presentation.WinSite
 
             log.Debug(Resource.addBtn);
 
+            
+
             // recoge datos alumno
-            var alumno = new Alumno()
+            Alumno alumno = new Alumno()
             {
                 Nombre = nameBox.Text,
                 Apellidos = surnameBox.Text,
@@ -75,10 +82,6 @@ namespace FileServer.Presentation.WinSite
 
 
         }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            alumnoRepository.ChangeOrigin(origin.Text);
-        }
+        
     }
 }

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Resources;
+using FileServer.Common.Model;
 
 namespace FileServer.Utils.FileManager
 {
@@ -15,46 +16,73 @@ namespace FileServer.Utils.FileManager
 
         private string filePath;
 
-        public void setFilePath(string filePath)
+        public virtual string FileExtension { get; set; } // los declara virtual, sobreescribible (en VB es overreadable)
+
+        public virtual string FilePath { get; set; }
+
+        //public void setFilePath(string filePath)
+        //{
+        //    this.filePath = filePath;
+        //}
+
+        public virtual void CreateFile()
         {
-            this.filePath = filePath;
         }
 
-        public void createJsonToFile(string Json)
+        public virtual bool FileExists()
         {
-            try
-            {
-                File.WriteAllText(filePath, Json);
-                log.Debug(Resource2.writJson);
-            }
-
-            //catch (Exception ex)
-            //{
-            //    Console.WriteLine("write error: " + ex.StackTrace);
-            //    log.Error("Couldn't write alumno info");
-            //    throw;
-            //}
-            catch (UnauthorizedAccessException ex)
-            {
-                throw ex;
-            }
-            catch (ArgumentException ex)
-            {
-                throw ex;
-            }
-            catch (DirectoryNotFoundException ex)
-            {
-                throw ex;
-            }
-            catch (IOException ex)
-            {
-                throw ex;
-            }
-            catch (System.Security.SecurityException ex)
-            {
-                throw ex;
-            }
+            return true;
         }
+
+        public virtual Alumno ProcessAlumnoData(Alumno alumno)
+        {
+            return alumno;
+        }
+
+        public virtual string RetrieveData()
+        {
+            return null;
+        }
+
+        public virtual void WriteToFile(string fileData)
+        {
+        }
+
+        //    public void createJsonToFile(string Json)
+        //    {
+        //        try
+        //        {
+        //            File.WriteAllText(filePath, Json);
+        //            log.Debug(Resource2.writJson);
+        //        }
+
+        //        //catch (Exception ex)
+        //        //{
+        //        //    Console.WriteLine("write error: " + ex.StackTrace);
+        //        //    log.Error("Couldn't write alumno info");
+        //        //    throw;
+        //        //}
+        //        catch (UnauthorizedAccessException ex)
+        //        {
+        //            throw ex;
+        //        }
+        //        catch (ArgumentException ex)
+        //        {
+        //            throw ex;
+        //        }
+        //        catch (DirectoryNotFoundException ex)
+        //        {
+        //            throw ex;
+        //        }
+        //        catch (IOException ex)
+        //        {
+        //            throw ex;
+        //        }
+        //        catch (System.Security.SecurityException ex)
+        //        {
+        //            throw ex;
+        //        }
+        //    }
 
         public string getJsonContent()
         {
@@ -65,7 +93,7 @@ namespace FileServer.Utils.FileManager
                     log.Debug(Resource2.loadAlumL);
                     return File.ReadAllText(filePath); // loads alumnos list
 
-                   
+
                 }
 
                 catch (Exception ex)
@@ -77,4 +105,4 @@ namespace FileServer.Utils.FileManager
             return null;
         }
     }
-}
+    }

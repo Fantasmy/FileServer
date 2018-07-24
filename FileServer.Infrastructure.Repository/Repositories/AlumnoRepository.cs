@@ -19,13 +19,24 @@ using System.Reflection;
 
 namespace FileServer.Infrastructure.Repository.Repositories
 {
-    
-
     public class AlumnoRepository : IAlumnoRepository
     {
         //ResourceManager rm = new ResourceManager(Resource1.FilePresentWinReso, Assembly.GetExecutingAssembly());
         private FileManager fileManager = new FileManager();
         private static readonly ILog log = LogHelper.GetLogger();
+
+        public FileManager FManager { get; set; }
+
+        public AlumnoRepository(AbstractFileFactory factory, int fileType, int filePathType)
+        {
+            //log4net.Config.XmlConfigurator.Configure();
+            FManager = factory.GetFileManager(fileType, filePathType);
+        }
+
+        public AlumnoRepository()
+        {
+        }
+
         public List<Alumno> GetAll()
         {
             string alumnosStr = fileManager.getJsonContent();
@@ -61,12 +72,13 @@ namespace FileServer.Infrastructure.Repository.Repositories
                 alumnos.Add(alumno);
                 log.Debug(Resource1.newAlum);
 
-                string Json = JsonConvert.SerializeObject(alumnos, Formatting.Indented);
-                fileManager.createJsonToFile(Json);
+                //string Json = JsonConvert.SerializeObject(alumnos, Formatting.Indented);
+                //fileManager.createJsonToFile(Json);
 
                 Console.WriteLine(alumno.Nombre);
                 log.Debug(Resource1.reAlum);
-                return alumno;
+                //return alumno;
+                return FManager.ProcessAlumnoData(alumno);
             }
 
             catch (Exception ex)
@@ -77,21 +89,21 @@ namespace FileServer.Infrastructure.Repository.Repositories
             }
         }
 
-        public void ChangeOrigin(string origin)
-        {
-            string filePath = "";
-            if (Resource1.AppConf.Equals(origin))
-            {
-                filePath = ConfigurationManager.AppSettings[Resource1.fileN];
-                log.Debug(Resource1.path1);
-            }
-            else if (Resource1.varEnt.Equals(origin))
-            {
-                filePath = Environment.GetEnvironmentVariable(Resource1.fileN);
-                log.Debug(Resource1.path2);
+        //public void ChangeOrigin(string origin)
+        //{
+        //    string filePath = "";
+        //    if (Resource1.AppConf.Equals(origin))
+        //    {
+        //        filePath = ConfigurationManager.AppSettings[Resource1.fileN];
+        //        log.Debug(Resource1.path1);
+        //    }
+        //    else if (Resource1.varEnt.Equals(origin))
+        //    {
+        //        filePath = Environment.GetEnvironmentVariable(Resource1.fileN);
+        //        log.Debug(Resource1.path2);
 
-            }
-            this.fileManager.setFilePath(filePath);
-        }
+        //    }
+        //    this.fileManager.setFilePath(filePath);
+        //}
     }
 }
