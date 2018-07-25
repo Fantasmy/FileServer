@@ -17,7 +17,7 @@ namespace FileServer.Presentation.WinSite
         [STAThread]
         static void Main()
         {
-            XmlConfigurator.Configure();
+            //XmlConfigurator.Configure();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

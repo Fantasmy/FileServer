@@ -89,15 +89,15 @@ namespace FileServer.Utils.FileManager
             try
             {
                 string[] items = fileData.Split(',');
-                var alumno = new Alumno(items[0], items[1], items[2], items[3]);
+                var alumno = new Alumno(items[0], items[1], items[2]);
 
                 XDocument doc = XDocument.Load(FilePath);
                 XElement root = doc.Element("Alumnos");
                 doc.Root.Add(new XElement("Alumno",
-                    new XElement("ID", alumno.IdAlumno),
+                    //new XElement("ID", alumno.Id),
                     new XElement("Nombre", alumno.Nombre),
                     new XElement("Apellidos", alumno.Apellidos),
-                    new XElement("DNI", alumno.Dni)));
+                    new XElement("DNI", alumno.DNI)));
                 doc.Save(FilePath);
             }
             catch (Exception ex)
@@ -106,6 +106,32 @@ namespace FileServer.Utils.FileManager
                 throw ex;
             }
         }
+
+        //public override void WriteToFile(string fileData)
+        //{
+        //    try
+        //    {
+        //        string[] items = fileData.Split(',');
+        //        //var alumno = new Alumno(items[0], items[1], items[2], items[3]);
+        //        var alumno = new Alumno(items[0], items[1], items[2]);
+
+        //        XDocument doc = XDocument.Load(FilePath);
+        //        XElement root = doc.Element("Alumnos");
+        //        doc.Root.Add(new XElement("Alumno",
+        //            //alumno.IdAlumno = Guid.NewGuid().ToString();
+        //            //new XElement("ID", alumno.IdAlumno),
+        //            //new XElement("ID", alumno.IdAlumno),  // FUNCIONARA?¿?¿?¿?
+        //            new XElement("Nombre", alumno.Nombre),
+        //            new XElement("Apellidos", alumno.Apellidos),
+        //            new XElement("DNI", alumno.DNI)));
+        //        doc.Save(FilePath);
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        throw ex;
+        //    }
+        //}
 
         public override Alumno ProcessAlumnoData(Alumno alumno)
         {
@@ -119,14 +145,14 @@ namespace FileServer.Utils.FileManager
                 var al = (from element in doc.Descendants("Alumno")
                           select new Alumno()
                           {
-                              IdAlumno = element.Element("ID").Value,
+                              //IdAlumno = element.Element("ID").Value,
                               Nombre = element.Element("Nombre").Value,
                               Apellidos = element.Element("Apellidos").Value,
-                              Dni = element.Element("DNI").Value
+                              DNI = element.Element("DNI").Value
                           }).ToList().Last();
 
-                Alumno alumnoRetorno = al;
-                return alumnoRetorno;
+                Alumno alumnoSaved = al;
+                return alumnoSaved;
             }
             catch (Exception ex)
             {

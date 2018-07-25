@@ -47,6 +47,8 @@ namespace FileServer.Utils.FileManager
         public virtual void WriteToFile(string fileData)
         {
         }
+    }
+}
 
         //    public void createJsonToFile(string Json)
         //    {
@@ -84,25 +86,46 @@ namespace FileServer.Utils.FileManager
         //        }
         //    }
 
-        public string getJsonContent()
-        {
-            if (File.Exists(filePath))
-            {
-                try
-                {
-                    log.Debug(Resource2.loadAlumL);
-                    return File.ReadAllText(filePath); // loads alumnos list
+    //    public string getJsonContent()
+    //    {
+    //        if (File.Exists(filePath))
+    //        {
+    //            try
+    //            {
+    //                log.Debug(Resource2.loadAlumL);
+    //                return File.ReadAllText(filePath); // loads alumnos list
 
 
-                }
+    //            }
 
-                catch (Exception ex)
-                {
-                    Console.WriteLine(Resource2.loadEr + ex.StackTrace);
-                    log.Error(Resource2.err);
-                }
-            }
-            return null;
-        }
-    }
-    }
+    //            //catch (Exception ex)
+    //            //{
+    //            //    Console.WriteLine("write error: " + ex.StackTrace);
+    //            //    log.Error("Couldn't write alumno info");
+    //            //    throw;
+    //            //}
+    //            catch (UnauthorizedAccessException ex)
+    //            {
+    //                throw ex;
+    //            }
+    //            catch (ArgumentException ex)
+    //            {
+    //                throw ex;
+    //            }
+    //            catch (DirectoryNotFoundException ex)
+    //            {
+    //                throw ex;
+    //            }
+    //            catch (IOException ex)
+    //            {
+    //                throw ex;
+    //            }
+    //            catch (System.Security.SecurityException ex)
+    //            {
+    //                throw ex;
+    //            }
+    //        }
+    //        return null;
+    //    }
+    //}
+    //}

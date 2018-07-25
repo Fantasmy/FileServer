@@ -76,8 +76,8 @@ namespace FileServer.Utils.FileManager
                 data = RetrieveData();
                 string lastLine = data.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries).Last();
                 string[] items = lastLine.Split(',');
-                var alumnoRetorno = new Alumno(items[0], items[1], items[2], items[3]);
-                return alumnoRetorno;
+                var alumnoSaved = new Alumno(items[0], items[1], items[2]);
+                return alumnoSaved;
             }
 
             //foreach (var myString in data.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))

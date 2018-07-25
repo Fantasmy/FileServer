@@ -10,10 +10,10 @@ namespace FileServer.Common.Model
     {
 
         // propiedades
-        public string IdAlumno { get; set; }
+        //public Guid IdAlumno { get; }
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
-        public string Dni { get; set; }
+        public string DNI { get; set; }
 
 
         // constructores
@@ -23,12 +23,17 @@ namespace FileServer.Common.Model
         }
 
 
-        public Alumno(string IdAlumno, string Nombre, string Apellidos, string Dni)
+        //public Alumno(Guid IdAlumno, string Nombre, string Apellidos, string Dni)
+        public Alumno(string Nombre, string Apellidos, string DNI)
         {
-            this.IdAlumno = IdAlumno;
-            this.Nombre = Nombre;
-            this.Apellidos = Apellidos;
-            this.Dni = Dni;
+            ////this.IdAlumno = Guid.NewGuid();
+            //this.Nombre = Nombre;
+            //this.Apellidos = Apellidos;
+            //this.DNI = DNI;
+            //Id = id;
+            Nombre = Nombre;
+            Apellidos = Apellidos;
+            DNI = DNI;
         }
 
         // métodos
@@ -36,20 +41,28 @@ namespace FileServer.Common.Model
         public override bool Equals(object obj)
         {
             var alumno = obj as Alumno;
-            return alumno != null &&
-                   IdAlumno == alumno.IdAlumno &&
-                   Nombre == alumno.Nombre &&
+            if (obj == null)
+                return false;
+
+                    //IdAlumno == alumno.IdAlumno &&
+            return Nombre == alumno.Nombre &&
                    Apellidos == alumno.Apellidos &&
-                   Dni == alumno.Dni;
+                   DNI == alumno.DNI;
+        }
+
+        public override string ToString()
+        {
+            return string.Format(@"{0},{1},{2}",
+                                   Nombre, Apellidos, DNI);
         }
 
         public override int GetHashCode()
         {
             var hashCode = -332541938;
-            hashCode = hashCode * -1521134295 + IdAlumno.GetHashCode();
+            //hashCode = hashCode * -1521134295 + IdAlumno.GetHashCode();
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Nombre);
             hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Apellidos);
-            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Dni);
+            hashCode = hashCode * -1521134295 + EqualityComparer<string>.Default.GetHashCode(DNI);
             return hashCode;
         }
     }

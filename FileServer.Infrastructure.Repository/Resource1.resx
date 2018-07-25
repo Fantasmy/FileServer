@@ -130,7 +130,8 @@
     <value>Error, cannot write line</value>
   </data>
   <data name="fileN" xml:space="preserve">
-    <value>fileName</value>
+    <value>
+    </value>
   </data>
   <data name="FilePresentWinReso" xml:space="preserve">
     <value>FileServer.Presentation.WinSite.Resource</value>

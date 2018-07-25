@@ -23,11 +23,7 @@ namespace FileServer.Presentation.WinSite
 {
     public partial class Form1 : Form
     {
-        AlumnoRepository alumnoRepository = new AlumnoRepository();
-
         private static readonly log4net.ILog log = LogHelper.GetLogger();
-
-        //ResourceManager rm = new ResourceManager("FileServer.Presentation.WinSite.Resource", Assembly.GetExecutingAssembly());
 
         public Form1()
         {
@@ -41,47 +37,22 @@ namespace FileServer.Presentation.WinSite
             AbstractFileFactory fFactory = new FileManagerFactory();
             var alumnoRepository = new AlumnoRepository(fFactory, comboBox1.SelectedIndex, origin.SelectedIndex);
 
-            //try
-            //{
-            //    int p = 0;
-            //    var num = 5 / p;
-            //}
-            //catch (VuelingException ex)
-            //{
-            //    LogManager.GetLogger(Resource.eLogger).Error(ex);
-            //    throw new VuelingException(Resource.err);
-
-            //}
-
             log.Debug(Resource.addBtn);
 
-            
-
             // recoge datos alumno
-            Alumno alumno = new Alumno()
-            {
-                Nombre = nameBox.Text,
-                Apellidos = surnameBox.Text,
-                Dni = dniBox.Text,
-            };
+            Alumno alumno = new Alumno(nameBox.Text, surnameBox.Text, dniBox.Text);
 
             var alumnoSaved = alumnoRepository.Add(alumno);
 
-            if (alumnoSaved != null)
+            if (alumnoSaved.Equals(alumno))
             {
-                // clear fields after saved data
-                nameBox.Text = "";
-                surnameBox.Text = "";
-                dniBox.Text = "";
                 MessageBox.Show(Resource.saveAlum);
             }
             else
             {
                 MessageBox.Show(Resource.err3);
             }
-
-
+            nameBox.Clear(); surnameBox.Clear(); dniBox.Clear();
         }
-        
     }
 }

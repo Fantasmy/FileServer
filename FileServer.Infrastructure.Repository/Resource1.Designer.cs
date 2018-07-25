@@ -97,7 +97,8 @@ namespace FileServer.Infrastructure.Repository {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a fileName.
+        ///   Busca una cadena traducida similar a 
+        ///    .
         /// </summary>
         internal static string fileN {
             get {
